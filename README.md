@@ -63,7 +63,7 @@ I’m actively learning and growing in the DevOps and cloud space. This project 
 
 ## 📫 Get in Touch
 
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/muhammadsesay/)
+- LinkedIn: [Muhammad Sesay](https://www.linkedin.com/in/muhammadsesay/)
 - Email: msesay8@gmail.com
 
 ---
