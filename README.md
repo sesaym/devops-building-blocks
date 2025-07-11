@@ -1,54 +1,71 @@
 # DevOps Building Blocks
 
-Welcome to **DevOps Building Blocks** — a personal lab where I explore infrastructure-as-code (IaC) through modular Terraform (on Azure for now). This is more than a project; it’s a growing, hands-on portfolio where I practice clean design, reusability, automation, and DevOps workflows.
+Welcome to **DevOps Building Blocks** — a personal DevOps lab and portfolio where I explore infrastructure-as-code (IaC), cloud architecture, and automation. This repo is structured as a scalable monorepo and includes everything from modular Terraform on Azure to end-to-end projects, GitHub Actions, and shell scripting.
+
+This is more than a project — it's a growing body of work that reflects how I approach real infrastructure problems, clean design, and DevOps workflows.
+
+---
 
 ## 📁 Project Structure
 
 ```
 devops-building-blocks/
-├── building-blocks/     # Core Terraform resources like VNets, Subnets, NICs, VMs
+├── building-blocks/     # Core Terraform modules (e.g., VNets, Subnets, NICs, VMs)
 ├── blueprints/          # Reusable higher-level modules composed from building blocks
-├── playgrounds/         # Test setups to validate modules and simulate real-world use
-├── scripts/             # Utility scripts for provisioning, teardown, or tooling (Planned)
-├── .github/             # GitHub Actions and CI/CD workflows (Planned)
+├── playgrounds/         # Environments for validating modules and isolated testing
+├── projects/            # Full-scale infrastructure projects (e.g., storage setup, compute stacks)
+├── stacks/              # Composed environments simulating production-like use
+├── scripts/             # Bash/Python utilities for provisioning, teardown, linting (coming soon)
+├── .github/             # GitHub Actions and CI/CD workflows (coming soon)
 ├── .gitignore
 └── README.md
 ```
 
+---
+
 ## 🎯 Project Goals
 
 - Build clean, reusable, and well-structured Terraform modules
-- Simulate real-world infrastructure environments
-- Practice organizing code for collaboration and scaling
-- Experiment with automation via GitHub Actions and shell scripts
-- Demonstrate knowledge across networking, compute, and provisioning
+- Design end-to-end infrastructure projects (e.g., storage, networking, compute)
+- Build and manage composed environments (stacks) using modular components
+- Implement automation with GitHub Actions and shell scripting
+- Practice collaboration-ready repo design with monorepo principles
+- Demonstrate working knowledge across networking, compute, IAM, and DevOps
+
+---
 
 ## 🧰 Tech Stack
 
-- **Terraform** (by HashiCorp)
-- **Azure** (as the cloud provider)
-- **Git & GitHub** (for version control and workflows)
-- **Bash/Python** (for scripts)
-- **GitHub Actions** (CI/CD and automation)
+- **Terraform** — Infrastructure as Code (Azure-focused to start)
+- **Azure** — Primary cloud provider (with potential expansion to AWS/GCP)
+- **Git & GitHub** — Version control and collaboration
+- **GitHub Actions** — CI/CD pipelines and Terraform automation (in progress)
+- **Bash/Python** — Supporting scripts for infra and tooling workflows
+
+---
 
 ## ✅ What’s Included (So Far)
 
-- Modular VNet, Subnet, NIC, and Linux VM components
-- Environment-agnostic module testing using “playgrounds”
-- Thoughtful monorepo structure supporting future stacks and projects
-- CI/CD pipelines with GitHub Actions (Planned)
-- Shell automation scripts for infrastructure workflows (Planned)
+- Modular components: VNet, Subnet, NIC, and Linux VM
+- Environment-agnostic module testing via `playgrounds/`
+- Projects directory for focused use cases (e.g., Azure storage)
+- Plans to compose production-like environments via `stacks/`
+- CI/CD pipelines with GitHub Actions (coming soon)
+- Shell utilities and deployment helpers (coming soon)
+
+---
 
 ## 🚀 How to Try It Out
 
 1. Clone the repo:
 
    ```bash
-   git clone https://github.com/<your-username>/devops-building-blocks.git
-   cd terraform-building-blocks
+   git clone https://github.com/sesaym/devops-building-blocks.git
+   cd devops-building-blocks
    ```
 
 2. Navigate to a playground example:
+
    ```bash
    cd playgrounds/test-vnet
    terraform init
@@ -57,15 +74,29 @@ devops-building-blocks/
 
 > ⚠️ Prerequisites: Azure CLI (`az login`), Terraform installed, valid Azure subscription.
 
-## 🙋‍♂️ About Me
+---
 
-I’m actively learning and growing in the DevOps and cloud space. This project is my way of leveling up through hands-on experimentation, while building a portfolio that reflects how I solve real infrastructure problems.
+## 🔭 What’s Coming Next
 
-## 📫 Get in Touch
-
-- LinkedIn: [Muhammad Sesay](https://www.linkedin.com/in/muhammadsesay/)
-- Email: msesay8@gmail.com
+- Full Azure Storage project (with lifecycle automation)
+- Project-specific CI/CD pipelines for formatting, validation, and apply plans
+- Scripted wrappers for provisioning and teardown
+- Authentication/Secrets handling
+- Expansion into AWS and GCP modules
 
 ---
 
-Thanks for checking out **DevOps Building Blocks**. Contributions, feedback, and collaboration are always welcome!
+## 🙋‍♂️ About Me
+
+I'm Muhammad Sesay — an early-career Cloud & DevOps Engineer exploring scalable infrastructure, automation, and modern cloud practices through hands-on learning. This project is my way of continuously learning while building something real and reusable.
+
+---
+
+## 📫 Get in Touch
+
+- 💼 [LinkedIn](https://www.linkedin.com/in/muhammadsesay/)
+- 📧 msesay8@gmail.com
+
+---
+
+Thanks for checking out **DevOps Building Blocks**! Feedback, collaboration, and ideas are always welcome.
