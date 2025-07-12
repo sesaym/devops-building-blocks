@@ -51,7 +51,7 @@ devops-building-blocks/
 - Projects directory for focused use cases (e.g., Azure storage)
 - Plans to compose production-like environments via `stacks/`
 - CI/CD pipelines with GitHub Actions (coming soon)
-- Shell utilities and deployment helpers (coming soon)
+- Shell utilities and deployment helpers
 
 ---
 
@@ -73,16 +73,6 @@ devops-building-blocks/
    ```
 
 > ⚠️ Prerequisites: Azure CLI (`az login`), Terraform installed, valid Azure subscription.
-
----
-
-## 🔭 What’s Coming Next
-
-- Full Azure Storage project (with lifecycle automation)
-- Project-specific CI/CD pipelines for formatting, validation, and apply plans
-- Scripted wrappers for provisioning and teardown
-- Authentication/Secrets handling
-- Expansion into AWS and GCP modules
 
 ---
 
