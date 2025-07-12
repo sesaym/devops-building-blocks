@@ -26,7 +26,7 @@ touch "$BUILDING_BLOCKS_DIR"/{main.tf,outputs.tf,variables.tf,versions.tf}
 mkdir -p "$BLUEPRINT_DIR"
 touch "$BLUEPRINT_DIR"/{main.tf,outputs.tf,variables.tf}
 
-create playgrounds file
+# Create playgrounds file
 mkdir -p "$PLAYGROUNDS_DIR"
 touch "$PLAYGROUNDS_DIR"/{main.tf,outputs.tf,versions.tf}
 
